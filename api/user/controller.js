@@ -1,14 +1,14 @@
 const User = require('./model');
 
 
-var u = new User({
-    name: 'Joel Cox',
-    email: 'joel.cox.dev@gmail.com',
-    password: 091190
-})
-u.save(function(err, kitty){
+// var u = new User({
+//     name: 'Joel Cox',
+//     email: 'joel.cox.dev@gmail.com',
+//     password: 091190
+// })
+// u.save(function(err, kitty){
 
-})
+// })
 
 class UserController {
     
