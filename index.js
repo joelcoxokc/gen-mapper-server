@@ -3,10 +3,11 @@ const bodyParser = require('body-parser');
 const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const config = require('./connect.json');
 
 mongoose.Promise = global.Promise;
  
-mongoose.connect('mongodb://127.0.0.1:27017/genmapper');
+mongoose.connect(config.mongoURI);
 
 const app = express();
 
