@@ -1,0 +1,28 @@
+{
+  "name": "gen-mapper-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelcoxokc/gen-mapper-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelcoxokc/gen-mapper-server/issues"
+  },
+  "homepage": "https://github.com/joelcoxokc/gen-mapper-server#readme"
+}
