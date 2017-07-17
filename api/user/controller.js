@@ -23,8 +23,34 @@ class UserController {
     }
 
     create() {}
-    update() {}
-    destroy() {}
+
+    update(req, res) {
+
+        return User.findOne({_id: req.body.id})
+            .then(user => {
+                Object.assign(user, req.body)
+                return user.save()
+            })
+            .then(()=> {
+                res.sendStatus(200);
+            })
+            .catch(err => {
+                res.sendStatus(500);
+            })
+    }
+
+    destroy(req, res) {
+        return User.findOne({_id: req.params.id})
+            .then(user => {
+                return user.remove()
+            })
+            .then(()=> {
+                res.sendStatus(200);
+            })
+            .catch(err => {
+                res.sendStatus(500);
+            })
+    }
 }
 
 const controller = new UserController();
